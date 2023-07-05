@@ -32,7 +32,30 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/detect-caxah"
 DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://universe.roboflow.com/s-o33ou/detect-caxah/dataset/1/download"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "Amplifier": [230, 25, 75],
+    "CCLD:1-2": [60, 180, 75],
+    "CCLD:2-3": [255, 225, 25],
+    "CCLD:3-4": [0, 130, 200],
+    "CCLD:4-5": [245, 130, 48],
+    "CCLD:5-6": [145, 30, 180],
+    "Car_Overlap": [70, 240, 240],
+    "Coax-Cable": [240, 50, 230],
+    "Diameter": [210, 245, 60],
+    "EQLD:1-1": [250, 190, 212],
+    "EQLD:1-2": [0, 128, 128],
+    "EQLD:1-3": [220, 190, 255],
+    "EQLD:1-4": [170, 110, 40],
+    "Electric-Cable": [255, 250, 200],
+    "Fiber-Equipment": [128, 0, 0],
+    "Lowest Point of Attachment on Pole": [170, 255, 195],
+    "Lowest Point of Attachment on Strand": [128, 128, 0],
+    "Pole_Height": [255, 215, 180],
+    "SLP": [0, 0, 128],
+    "Street-Light": [128, 128, 128],
+    "Telco-Cable": [255, 0, 0],
+    "Wooden-Pole": [0, 0, 255]
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 PAPER: Optional[str] = None
